@@ -5,6 +5,7 @@ import Header from "../Components/Header";
 
 function Home() {
 
+
   
   return (
     <>
@@ -18,6 +19,7 @@ function Home() {
 
   {/* <Login /> */}
   <About />
+  {/* <CreateCards createCard={createCard}/> */}
   </div></>
     
   );
