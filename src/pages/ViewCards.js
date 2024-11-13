@@ -2,30 +2,9 @@ import React, { useEffect } from "react";
 import CardDisplay from "../Components/CardDisplay";
 import "../styles/ViewCards.css";
 
-function ViewCards(){
+function ViewCards({cards,loading,error,}){
 
-const[cards,setCards] = React.useState([]);
-const[loading,setLoading] = React.useState(true);
-const[error,setError] = React.useState(null);
 
-useEffect(() => {
-    setLoading(true);
-
- fetch("http://localhost:5000/words")   
- .then((response)=>{
-    if (!response.ok){
-        throw new Error ("Failed to fetch data");
-    } return response.json()
- })
- .then(data => {
-    setCards(data);
-    setLoading(false);
- })
- .catch(error => {
-    setError(error.message);
-    setLoading(false);
- });
-},[]);
 
     return(
         <div className="view-cards">
@@ -46,9 +25,11 @@ useEffect(() => {
             ) : (
                 <p>No cards available yet. Create a new flashcard to get started.</p>
             )}
+            
         </div>
         </div>
     )
 }
+console.log('card dispplayed');
 
 export default ViewCards;

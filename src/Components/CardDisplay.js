@@ -14,19 +14,19 @@ return(
             (
                 <div className="card-back">
                     <h3>English Translation:</h3>
-                    {/* <p>{englishTranslation}</p> */}
-                    <p>Name</p>
+                    <p>{englishTranslation}</p>
+                    {/* <p>Name</p> */}
                 </div>
             ) 
             : 
             (
                 <div>
                     <h3>Hanzi: </h3>
-                    {/* <p>{hanzi}</p> */}
-                    <p>名字</p>
+                    <p>{hanzi}</p>
+                    {/* <p>名字</p> */}
                     <h2>Pinyin: </h2>
-                    {/* <p>{pinyin}</p> */}
-                    <p>ming zi</p>
+                    <p>{pinyin}</p>
+                    {/* <p>ming zi</p> */}
                 </div>
             )
             }

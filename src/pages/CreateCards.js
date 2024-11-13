@@ -10,7 +10,7 @@ const[pinyin,setPinyin] = React.useState("");
 const[englishTranslation,setEnglishTranslation] = React.useState("");
 const[message,setMessage] = React.useState("");
 
-const levels = [1,2,3,4,5,6,7,8,9];
+const levels = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 //functions that are handling the change in the input fields
 function handleLevelChange(event){
@@ -38,20 +38,31 @@ if (!level || !hanzi || !pinyin || !englishTranslation ){
     setMessage("Please fill in all fields.");
     return;
 }
-createCard({level,hanzi,pinyin,englishTranslation});
-setMessage("Card created successfully!");
-console.log('card created');
 
-//resets the input fields
-setLevel("");
-setHanzi("");
-setPinyin("");
-setEnglishTranslation("");
+const newCard = {level, hanzi, pinyin, englishTranslation};
+
+fetch("http://localhost:5000/words",{
+    method: "POST",
+    headers: {
+        'Content-Type' : 'application/json',
+    },
+    body:JSON.stringify(newCard),
+})
+.then((response) => response.json())
+.then((data) => {
+    setMessage("Card created successfully!");
+    createCard(data);
+    //resets the input fields
+    setLevel("");
+    setHanzi("");
+    setPinyin("");
+    setEnglishTranslation("");
+})
+.catch((error)=>{
+    setMessage("Error creating card")
+    console.error('Error:',error);
+});
 }
-
-
-
-
 
     return(
         <div className="form-container">
