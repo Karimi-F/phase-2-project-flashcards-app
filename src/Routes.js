@@ -5,13 +5,13 @@ import About from './pages/About';
 import CreateCards from './pages/CreateCards';
 import ViewCards from './pages/ViewCards';
 
-function RoutesComponent ({createCard,cards}){
+function RoutesComponent ({createCard,cards,deleteCard}){
     return(
         <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/create-cards" element={<CreateCards createCard={createCard}/>}/>
-        <Route path="/view-cards" element={<ViewCards  cards={cards}/>}/>
+        <Route path="/view-cards" element={<ViewCards  cards={cards}  deleteCard={deleteCard}/>}/>
       </Routes>
     );
 }

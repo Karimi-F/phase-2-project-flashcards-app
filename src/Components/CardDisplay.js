@@ -1,12 +1,18 @@
 import React from "react";
 import '../styles/CardDisplay.css';
 
-function CardDisplay({level,hanzi,pinyin,englishTranslation}){
+function CardDisplay({card,deleteCard}){
+    const {id,level,hanzi,pinyin,englishTranslation} = card;
     const[flipped,setFlipped]=React.useState(false);
 
     function handleFlip(){
         setFlipped(!flipped);
     }
+
+    function handleDelete(){
+        deleteCard(card.id);
+    }
+
 return(
         <>
         <div className="card-display" >
@@ -20,7 +26,7 @@ return(
             ) 
             : 
             (
-                <div>
+                <div className="card-front">
                     <h3>Hanzi: </h3>
                     <p>{hanzi}</p>
                     {/* <p>名字</p> */}
@@ -30,11 +36,21 @@ return(
                 </div>
             )
             }
-            <button  
+            <div className="btn-container"> 
+                <button  
             className="btn"
             id="flip-btn"
-            onClick={handleFlip}>
+            onClick={handleFlip}
+            >
                 Flip</button>
+
+                <button
+                className="btn"
+                id="dlt-btn"
+                onClick={handleDelete}
+                >Delete</button>
+                </div>
+           
         </div>
         </>
     

@@ -35,6 +35,18 @@ function App() {
     setCards([...cards,newCard]);
   }
 
+function deleteCard(id){
+  fetch(`http://localhost:5000/words/${id}`,{
+    method: 'DELETE',
+  })
+  .then(()=>{
+    setCards(cards.filter((card)=>card.id !==id));
+  })
+  .catch((error) =>{
+    console.error("Error deleting card:", error);
+  });
+}
+
   return (
     <Router>
       <div className='navbar-routes'>
@@ -45,6 +57,7 @@ function App() {
         cards={cards}
         loading={loading}
         error={error}
+        deleteCard={deleteCard}
         />
       </div>
     </Router>

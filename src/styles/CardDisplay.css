@@ -1,5 +1,26 @@
 .card-display{
     border: 2px solid;
+    text-align: center;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    /* position: relative; */
+}
+
+.card-display .card-back, .card-front{
+    /* position: absolute; */
+}
+
+.card-display .btn-container{
+    display: flex;
+    justify-content: space-between;
+    justify-content: baseline;
+    /* background-color: aqua; */
+}
+
+.card-display .btn-container .btn {
+background-color: blue;
+
 }
 
 .card-display #flip-btn {
@@ -17,5 +38,19 @@
     color: orange;
 }
 
+.card-display #dlt-btn{
+    width: 10vw;
+    height: 5vw;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.card-display #dlt-btn:hover{
+    background-color: black;
+    color: orange;
+}
 
 

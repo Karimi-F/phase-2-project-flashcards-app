@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import CardDisplay from "../Components/CardDisplay";
 import "../styles/ViewCards.css";
 
-function ViewCards({cards,loading,error,}){
+function ViewCards({cards,loading,error,deleteCard}){
 
 
 
@@ -16,10 +16,12 @@ function ViewCards({cards,loading,error,}){
                 cards.map((card) => (
                     <CardDisplay 
                     key={card.id}
-                    level={card.level}
-                    hanzi={card.hanzi}
-                    pinyin={card.pinyin}
-                    englishTranslation={card.englishTranslation}
+                    card={card}
+                    // level={card.level}
+                    // hanzi={card.hanzi}
+                    // pinyin={card.pinyin}
+                    // englishTranslation={card.englishTranslation}
+                    deleteCard={deleteCard}
                     />
                 ))
             ) : (
