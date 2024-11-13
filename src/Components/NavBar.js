@@ -6,7 +6,7 @@ import "../styles/NavBar.css";
 function NavBar(){
     return(
         <nav className="navbar">
-            <h2>Hanzi FlashCards</h2>
+            <h1>Hanzi FlashCards</h1>
             <ul className="navbar-links">
                 <li>
                     <Link to="/">Home</Link>

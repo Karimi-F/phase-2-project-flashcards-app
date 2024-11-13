@@ -66,7 +66,7 @@ setEnglishTranslation("");
                         <option 
                         key={level}
                         value={level}
-                        >Level{level}</option>
+                        >Level {level}</option>
                     ))}
                 </select>
                 <br/>

@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    background-color: #F24236;
 }
 
 .form-container{
@@ -9,6 +10,38 @@
     border-radius: 5px;    
     font-weight: 600;
     font-size: 20px;
+    height: 300px;
+}
+
+.form-container h2{
+    display: flex;
+    justify-content: center;
+}
+
+.form-container form{
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.form-container label{
+    font-size: 20px;
+}
+
+.form-container select{
+    font-size: 20px;
+    border-radius:3px ;
+}
+
+.form-container option{
+    font-size: 20px;
+}
+
+.form-container input{
+    width: 10vw;
+    height: 2vw;
+    border-radius: 3px;
+    font-size: 20px;
+
 }
 
 .form-container .btn{

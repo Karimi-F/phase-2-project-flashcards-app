@@ -1,0 +1,37 @@
+*{
+    color: aliceblue;
+}
+
+/* *{
+    position: relative;
+    background-image: url('../assets/images/timothee-gidenne-xyIA0tRwpX4-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+*{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  rgba(255, 255, 255, 0);
+} */
+
+
+  /* .background-div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* White overlay at 50% opacity */
+    /* Use rgba(0, 0, 0, 0.5) for a black overlay, or adjust as needed */
+    /* pointer-events: none;  */
+    /* Allows interaction with content beneath the overlay */
+  /* }  */
+

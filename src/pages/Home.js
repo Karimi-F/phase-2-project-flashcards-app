@@ -2,6 +2,7 @@ import React from "react";
 import About from "../pages/About";
 // import Login from "../Components/Login"
 import Header from "../Components/Header";
+import "../styles/Home.css";
 
 function Home() {
 
@@ -18,7 +19,7 @@ function Home() {
     </p>
 
   {/* <Login /> */}
-  <About />
+  {/* <About /> */}
   {/* <CreateCards createCard={createCard}/> */}
   </div></>
     
