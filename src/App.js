@@ -19,7 +19,10 @@ function App() {
       <div className='navbar-routes'>
         <NavBar />
         <Header />
-        <RoutesComponent createCard={createCard}/>
+        <RoutesComponent 
+        createCard={createCard} 
+        cards={cards}
+        />
       </div>
     </Router>
    

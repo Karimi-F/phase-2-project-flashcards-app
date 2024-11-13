@@ -12,12 +12,13 @@
 }
 
 .form-container .btn{
-    width: 20vw;
-    height: 10vw;
+    width: 8vw;
+    height: 4vw;
     border-radius: 5px;
     background-color: orange;
     color: black;
     cursor: pointer;
+    transition: ease-in-out 0.3s;
 }
 
 .form-container .btn:hover{
