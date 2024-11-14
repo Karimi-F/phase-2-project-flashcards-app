@@ -22,7 +22,7 @@ function handleSubmit (event){
     event.preventDefault();
 }
 
-fetch("http://localhost:5000/profiles?email=" + email)
+fetch("https://phase-2-project-flashcards-app.onrender.com/profiles?email=" + email)
 .then(function(response){
     return response.json();
 })

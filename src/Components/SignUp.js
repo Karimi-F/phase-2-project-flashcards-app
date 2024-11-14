@@ -31,7 +31,7 @@ if(password !== confirmPassword){
 if (email && password){
     const newUser = {email, password};
 
-fetch("http://localhost:5000/profiles",{
+fetch("https://phase-2-project-flashcards-app.onrender.com/profiles",{
     method:"POST",
     headers:{
         "Content-Type":"application/json"

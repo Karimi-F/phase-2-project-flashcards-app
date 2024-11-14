@@ -36,7 +36,7 @@ function App() {
   }
 
 function deleteCard(id){
-  fetch(`http://localhost:5000/words/${id}`,{
+  fetch(`https://phase-2-project-flashcards-app.onrender.com/words/${id}`,{
     method: 'DELETE',
   })
   .then(()=>{
