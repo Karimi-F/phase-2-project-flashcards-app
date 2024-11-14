@@ -32,7 +32,7 @@ function Home() {
 </div>
 
     
-  {/* <SignUp /> */}
+  <SignUp />
   {/* <Login /> */}
   {/* <About /> */}
   {/* <CreateCards createCard={createCard}/> */}

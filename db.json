@@ -1,4 +1,16 @@
 {
+  "profiles": [
+    {
+      "id": 1,
+      "email": "user@examples.com",
+      "password": "hashed_password"
+    },
+    {
+      "id": "053c",
+      "email": "fridah37karimi@gmail.com",
+      "password": "123Chinese"
+    }
+  ],
   "words": [
     {
       "id": "14b1",
