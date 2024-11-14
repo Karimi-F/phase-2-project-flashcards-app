@@ -54,8 +54,8 @@ if(user.password === password){
         <div className="form-container" id="login-form-container">
             
             <h2>Login</h2>
-            {/* {error && <p className="error">{error}</p>}
-            {success && <p className="success">Log in successful! Welcome back.</p>} */}
+            {error && <p className="error">{error}</p>}
+            {success && <p className="success">Log in successful! Welcome back.</p>}
             <form onSubmit={handleSubmit} className="login-form">
                 <div className="form-area-container">
                 <div className="form-area">
