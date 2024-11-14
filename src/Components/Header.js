@@ -3,8 +3,9 @@ import "../styles/Header.css";
 
 function Header (){
     return (
-        <header>
-            {/* <h1>Hanzi Flashcards</h1> */}
+        <header className="header">
+            <h1>Hanzi Flashcards</h1>
+            <p>Master Chinese characters one flashcard at a time</p>
         </header>
     )
 }

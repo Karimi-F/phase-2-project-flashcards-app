@@ -23,7 +23,7 @@ function handleLoginClick(){
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="home">
         <h2>Welcome to Hanzi FlashCards</h2>
         <div className="container">
@@ -68,14 +68,22 @@ function handleLoginClick(){
           <div className="sign-up-btn-container">
             <p>First time here? Get started</p>
             <br/>
-          <button type="submit" onClick={handleSignUpClick} className="btn">Sign Up</button>
+          <button 
+          className="btn" 
+          type="submit" 
+          onClick={handleSignUpClick} >
+            Sign Up</button>
          
           </div>
           {showSignUp && <SignUp />}
           <div>
             <p>Ready to continue?</p>
             <br/>
-            <button type="submit" onClick={handleLoginClick} className="btn">Login</button>
+            <button 
+            className="btn" 
+            type="submit" 
+            onClick={handleLoginClick} >
+              Login</button>
           
           </div>
           {showLogin && <Login />}
