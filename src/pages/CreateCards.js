@@ -112,8 +112,10 @@ fetch("http://localhost:5000/words",{
                 />
                 <br/>
                 <br/>
-
+                <div className="btn-container">
                 <button type="submit" className="btn">Create</button>
+                </div>
+                
             </form>
         </div>
     )

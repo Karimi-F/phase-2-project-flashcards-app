@@ -7,6 +7,20 @@ import image from "../assets/images/Chinese.jpg";
 import SignUp from "../Components/SignUp";
 
 function Home() {
+
+  const[showSignUp, setShowSignUp] = React.useState(false);
+  const[showLogin, setShowLogin] = React.useState(false);
+
+function handleSignUpClick(){
+  setShowSignUp(true);
+  setShowLogin(false);
+}
+
+function handleLoginClick(){
+  setShowLogin(true);
+  setShowSignUp(false);
+}
+
   return (
     <>
       <Header />
@@ -53,12 +67,18 @@ function Home() {
         <div className="btn-container">
           <div className="sign-up-btn-container">
             <p>First time here? Get started</p>
-          <button type="submit" className="btn">Sign Up</button>
+            <br/>
+          <button type="submit" onClick={handleSignUpClick} className="btn">Sign Up</button>
+         
           </div>
+          {showSignUp && <SignUp />}
           <div>
             <p>Ready to continue?</p>
-            <button type="submit" className="btn">Login</button>
+            <br/>
+            <button type="submit" onClick={handleLoginClick} className="btn">Login</button>
+          
           </div>
+          {showLogin && <Login />}
           
         </div>
       </div>

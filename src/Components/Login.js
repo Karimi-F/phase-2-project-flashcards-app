@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Login.css"
+import "../styles/Login.css";
 
 function Login(){
 
@@ -51,7 +51,7 @@ if(user.password === password){
 
     return(
         <>
-        <div className="login">
+        <div className="form-container" id="login-form-container">
             
             <h2>Login</h2>
             {/* {error && <p className="error">{error}</p>}
@@ -89,7 +89,7 @@ if(user.password === password){
                 </div>
                 
                 <div className="submit-btn-container" >
-                <button className="submit-btn" type="submit">Login</button>
+                <button className="btn" id="submit-btn" type="submit">Login</button>
                 </div>
                 
             </form>

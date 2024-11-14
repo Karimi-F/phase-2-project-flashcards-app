@@ -11,6 +11,7 @@ function About() {
         flashcards and specify level of interest when studying and revising.
       </p>
       <h2>Features</h2>
+      <div className="list-container">
       <ol>
         <li>
           <strong>Flashcard Creator:</strong>
@@ -25,6 +26,8 @@ function About() {
           Choose and specify the HSK level you want to study and revise for.
         </li>
       </ol>
+      </div>
+     
       <h2>How to use</h2>
       <p>
         First things first is creating your flashcards. Start by choosing and

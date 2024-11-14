@@ -17,7 +17,7 @@ const filteredCards = selectedLevel === "all"
         <div className="view-cards">
         <h2>Your Flashcards</h2>
 <div className="filter-level-container">
-    <label>Filter by Level</label>
+    <label>Filter by Level: </label>
 <select id="level-filter" value={selectedLevel} onChange={handleLevelChange}>
     <option value="all">All Levels</option>
     <option value="1">Level 1</option>
@@ -71,6 +71,5 @@ const filteredCards = selectedLevel === "all"
     </div>
     );
 }
-console.log('card dispplayed');
 
 export default ViewCards;

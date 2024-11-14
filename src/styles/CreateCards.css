@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* background: #F24236; */
 }
 
 .form-container{
@@ -17,7 +16,7 @@
     border: 2px solid;
     font-weight: 600;
     font-size: 20px;
-    height: 300px;   
+    height: 100%;   
 }
 
 .form-container h2{
@@ -26,7 +25,7 @@
 }
 
 form{
-    height: 500px;
+    height: fit-content;
     padding: 20px;
     margin-bottom: 30px;
     display: flex;
@@ -60,11 +59,17 @@ form{
     background-color: #f9fbfd;
 }
 
+.form-container .btn-container{
+    display: flex;
+    justify-content: center;
+}
+
 .form-container .btn{
     width: 8vw;
     height: 4vw;
     border: none;
     border-radius: 5px;
+    justify-content: center;
     background-color: orange;
     color: black;
     cursor: pointer;
