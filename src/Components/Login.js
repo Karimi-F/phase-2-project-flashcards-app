@@ -3,60 +3,86 @@ import "../styles/Login.css"
 
 function Login(){
 
-const [username, setUsername] = React.useState('');
+const [email, setEmail] = React.useState('');
 const [password, setPassword] = React.useState('');
-// const [error, setError] = React.useState('');
+const [error, setError] = React.useState('');
+const [success,setSuccess] = React.useState(false);
 
-function handleUsernameChange(event){
-    setUsername(event.target.value);
-}
+function handleChange(event){
+    const {name, value} = event.target;
 
-function handlePasswordChange(event){
-    setPassword(event.target.value);
+    if (name === "email"){
+        setEmail(value);
+    } else if(name ==="password"){
+        setPassword(value);
+    }
 }
 
 function handleSubmit (event){
     event.preventDefault();
 }
 
-// if(!username || !password){
-//     setError('Please enter both username and password.');
-//     return;
-// }
+fetch("http://localhost:5000/profiles?email=" + email)
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+    if (data.length === 0){
+        setError("No user found with this email.")
+        return;
+    }
 
-// if (username === 'user' && password === 'password'){
-//     setError('');
-//     alert('Login Succeful');
-// }else{
-//     setError('You\'ve entered the wrong username or password. Try again.');
-// }
+    const user = data[0];
+
+//Checks if the password matches the one in the database
+if(user.password === password){
+    setSuccess(true);
+    setError("");
+    console.log("Login successful");
+}else{
+    setError("Incorrect password");
+}
+})
+
+.catch(function(error){
+    setError("Error logging in:" + error.message);
+});
+
 
     return(
         <>
         <div className="login">
             
             <h2>Login</h2>
-            <form onSubmit={handleSubmit}>
+            {/* {error && <p className="error">{error}</p>}
+            {success && <p className="success">Log in successful! Welcome back.</p>} */}
+            <form onSubmit={handleSubmit} className="login-form">
                 <div className="form-area-container">
                 <div className="form-area">
-                <label>Username: </label>
+                <label>Email: </label>
                 <input
                 type="text"
                 className="input-area"
-                // value={}
+                id="email"
+                name="email"
+                value={email}
                 placeholder="Enter your username"
-                onChange={handleUsernameChange}
+                onChange={handleChange}
                 required
                 />
                 </div>
+
+
                 <div className="form-area">
                 <label>Password: </label>
                 <input
                 type="text"
                 className="input-area"
-                // value={}
+                id="password"
+                name="password"
+                value={password}
                 placeholder="Enter your password"
-                onChange={handlePasswordChange}
+                onChange={handleChange}
                 required
                 />
                 </div>
@@ -68,7 +94,7 @@ function handleSubmit (event){
                 
             </form>
             </div>
-            <p className="welcome">Yaaaaaay! Welcome back! Your flashcards missed you.</p>
+            {/* <p className="welcome">Yaaaaaay! Welcome back! Your flashcards missed you.</p> */}
         </>
         
     )
