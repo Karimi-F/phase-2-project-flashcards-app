@@ -14,7 +14,7 @@ function About() {
       <ol>
         <li>
           <strong>Flashcard Creator:</strong>
-          Create and personalize your own flashcards.{" "}
+          Create and personalize your own flashcards.
         </li>
         <li>
           <strong>Flashcard Viewer:</strong>

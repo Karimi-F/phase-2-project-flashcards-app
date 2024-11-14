@@ -1,0 +1,11 @@
+.filter-level-container{
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 20px;
+    justify-content: end;
+
+}
+
+.filter-level-container select{
+    font-size: 18px;
+}

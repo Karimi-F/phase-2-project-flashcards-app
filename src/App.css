@@ -1,3 +1,8 @@
+/* *{
+  background: linear-gradient(90deg,rgb(101,3,122,0.7),rgb(174,9,100,0.7),rgba(0,94,255,0.726)),url(../src/assets/images/background-image.jpg);
+  background-size: cover;
+} */
+
 .App {
   text-align: center;
   
@@ -37,3 +42,7 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+  

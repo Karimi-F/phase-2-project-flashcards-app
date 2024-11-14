@@ -81,6 +81,7 @@ fetch("http://localhost:5000/words",{
                     ))}
                 </select>
                 <br/>
+                <br/>
 
                 <label>Hanzi: </label>
                 <input
@@ -88,7 +89,9 @@ fetch("http://localhost:5000/words",{
                 type="text"
                 value={hanzi}
                 onChange={handleHanziChange}
-                /><br/>
+                />
+                <br/>
+                <br/>
 
                 <label>Pinyin: </label>
                 <input
@@ -96,7 +99,9 @@ fetch("http://localhost:5000/words",{
                 type="text"
                 value={pinyin}
                 onChange={handlePinyinChange}
-                /><br/>
+                />
+                <br/>
+                <br/>
 
                 <label>English Translation: </label>
                 <input
@@ -104,7 +109,10 @@ fetch("http://localhost:5000/words",{
                 type="text"
                 value={englishTranslation}
                 onChange={handleEnglishTranslationChange}
-                /><br/>
+                />
+                <br/>
+                <br/>
+
                 <button type="submit" className="btn">Create</button>
             </form>
         </div>

@@ -15,14 +15,19 @@ function CardDisplay({card,deleteCard}){
 
 return(
         <>
-        <div className="card-display" >
-            {flipped ? 
+        <div className={`card-display ${flipped ? "flipped" : ""}`} >
+            <div className="card">
+                {flipped ? 
             (
                 <div className="card-back">
                     <h3>English Translation:</h3>
                     <p>{englishTranslation}</p>
                     {/* <p>Name</p> */}
+                    <br/>
+                    <br/>
+                    <br/>
                 </div>
+                
             ) 
             : 
             (
@@ -33,9 +38,13 @@ return(
                     <h2>Pinyin: </h2>
                     <p>{pinyin}</p>
                     {/* <p>ming zi</p> */}
+                    <br/>
                 </div>
             )
             }
+            </div>
+            
+
             <div className="btn-container"> 
                 <button  
             className="btn"
