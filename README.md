@@ -20,17 +20,17 @@ To run this app locally, follow these steps:
    cd hanzi-flashcards-app
 
 2. Install Dependencies:
-### npm install
+   ```bash 
+    npm install
 
 3. Set Up JSON Server:
 
-The app uses a db.json file to store flashcard data. Start the JSON server:
+    ```bash 
+    npx json-server --watch db.json --port 5000
 
-### npx json-server --watch db.json --port 5000
-
-4. Run the Application:
-Start the React app:
-### `npm start`
+4. Start and run the Application:
+    ```bash 
+    npm start
 
 5. Open in Browser:
 
