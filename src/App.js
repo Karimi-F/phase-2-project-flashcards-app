@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     setLoading(true);
 
- fetch("http://localhost:5000/words")   
+ fetch("https://phase-2-project-flashcards-app-1.onrender.com/words")   
  .then((response)=>{
     if (!response.ok){
         throw new Error ("Failed to fetch data");
@@ -35,7 +35,7 @@ function App() {
   }
 
 function deleteCard(id){
-  fetch(`http://localhost:5000/words/${id}`,{
+  fetch(`https://phase-2-project-flashcards-app-1.onrender.com/words/${id}`,{
     method: 'DELETE',
   })
   .then(()=>{

@@ -5,10 +5,11 @@
     margin-bottom: 20px;
     width: 100%;
     border-radius: 10px;
-    perspective: 1000px; /* Keep for 3D effect */
+    perspective: 1000px; 
     position: relative; 
-    transition: transform 0.3s ease;/* Allow absolute positioning inside */
+    transition: transform 0.3s ease;
   }
+
 
   .card-display:hover{
     transform: scale(1.05);
@@ -51,7 +52,6 @@
     transform: rotateY(180deg);
   }
   
-  /* Position the button container at the bottom */
   #contain-btn {
     display: flex; 
     justify-content: space-between; 
@@ -77,8 +77,8 @@
   
   .card-display #flip-btn,
   .card-display #dlt-btn {
-    width: 40%; /* Adjust size of the buttons */
-    height: 40px; /* Fixed height for buttons */
+    width: 40%;
+    height: 40px;
     border: none;
     border-radius: 5px;
     background-color: orange;
@@ -94,11 +94,10 @@
   }
   
   .card-display #flip-btn {
-    margin-right: 10px; /* Optional space between buttons */
+    margin-right: 10px; 
   }
   
   .card-display #dlt-btn {
-    margin-left: 10px; /* Optional space between buttons */
+    margin-left: 10px; 
   }
-  
   

@@ -1,14 +1,14 @@
 .navbar {
-    background-color: #FF8A5B; /* Warm background color */
+    background-color: #FF8A5B; 
     padding: 15px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 3px solid #FFDDC1; /* Accent color for contrast */
+    border-bottom: 3px solid #FFDDC1; 
 }
 
 .navbar h1 {
-    color: #FFFFFF; /* White text for contrast */
+    color: #FFFFFF; 
     font-size: 1.8rem;
     margin: 0;
 }
@@ -36,5 +36,5 @@
 
 .navbar-links a:hover {
     background-color: #FFFFFF;
-    color: #FF8A5B; /* Inverted color on hover */
+    color: #FF8A5B; 
 }

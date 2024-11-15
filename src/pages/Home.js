@@ -1,29 +1,12 @@
 import React from "react";
-import About from "../pages/About";
-import Login from "../Components/Login";
-import Header from "../Components/Header";
 import "../styles/Home.css";
 import image from "../assets/images/Chinese.jpg";
-import SignUp from "../Components/SignUp";
+
 
 function Home() {
 
-  const[showSignUp, setShowSignUp] = React.useState(false);
-  const[showLogin, setShowLogin] = React.useState(false);
-
-function handleSignUpClick(){
-  setShowSignUp(true);
-  setShowLogin(false);
-}
-
-function handleLoginClick(){
-  setShowLogin(true);
-  setShowSignUp(false);
-}
-
   return (
     <>
-      {/* <Header /> */}
       <div className="home">
         <h2>Welcome to Hanzi FlashCards</h2>
         <div className="container">
@@ -48,32 +31,6 @@ function handleLoginClick(){
           </div>
         </div>
         
-
-        {/* <div className="btn-container">
-          <div className="sign-up-btn-container">
-            <p>First time here? Get started</p>
-            <br/>
-          <button 
-          className="btn" 
-          type="submit" 
-          onClick={handleSignUpClick} >
-            Sign Up</button>
-         
-          </div>
-          {showSignUp && <SignUp />}
-          <div>
-            <p>Ready to continue?</p>
-            <br/>
-            <button 
-            className="btn" 
-            type="submit" 
-            onClick={handleLoginClick} >
-              Login</button>
-          
-          </div>
-          {showLogin && <Login />}
-          
-        </div> */}
       </div>
     </>
   );

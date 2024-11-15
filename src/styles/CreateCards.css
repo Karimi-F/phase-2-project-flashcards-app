@@ -34,7 +34,6 @@ label {
     margin-bottom: 5px;
 }
 
-/* Input and select styling */
 input[type="text"],
 select {
     width: 100%;
@@ -47,7 +46,6 @@ select {
     color: #333;
 }
 
-/* Input and select hover and focus */
 input[type="text"]:focus,
 select:focus {
     outline: none;
@@ -55,7 +53,6 @@ select:focus {
     box-shadow: 0 0 4px rgba(246, 124, 124, 0.5);
 }
 
-/* Button container styling */
 .btn-container {
     text-align: center;
 }
@@ -93,7 +90,6 @@ select:focus {
     color: orange;
 } */ 
 
-/* Message styling for feedback */
 .message {
     font-size: 1rem;
     color: #666666;

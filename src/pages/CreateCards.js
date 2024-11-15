@@ -41,7 +41,7 @@ if (!level || !hanzi || !pinyin || !englishTranslation ){
 
 const newCard = {level, hanzi, pinyin, englishTranslation};
 
-fetch("http://localhost:5000/words",{
+fetch("https://phase-2-project-flashcards-app-1.onrender.com/words",{
     method: "POST",
     headers: {
         'Content-Type' : 'application/json',
