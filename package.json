@@ -1,7 +1,7 @@
 {
   "name": "flashcards-app",
   "version": "0.1.0",
-  "homepage": "https://karimi-f.github.io/phase-2-project-flashcards-app/",
+  "homepage": "https://karimi-f.github.io/phase-2-project-flashcards-app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
