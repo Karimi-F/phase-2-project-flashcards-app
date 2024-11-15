@@ -1,4 +1,5 @@
 import React from "react";
+import { Navigate } from "react-router-dom";
 import "../styles/Login.css";
 
 function Login(){
@@ -22,7 +23,7 @@ function handleSubmit (event){
     event.preventDefault();
 }
 
-fetch("https://phase-2-project-flashcards-app.onrender.com/profiles?email=" + email)
+fetch("http://localhost:5000/profiles?email=" + email)
 .then(function(response){
     return response.json();
 })
@@ -48,6 +49,9 @@ if(user.password === password){
     setError("Error logging in:" + error.message);
 });
 
+if(success){
+    return <Navigate to="/home" replace />
+}
 
     return(
         <>
@@ -76,7 +80,7 @@ if(user.password === password){
                 <div className="form-area">
                 <label>Password: </label>
                 <input
-                type="text"
+                type="password"
                 className="input-area"
                 id="password"
                 name="password"
@@ -94,7 +98,6 @@ if(user.password === password){
                 
             </form>
             </div>
-            {/* <p className="welcome">Yaaaaaay! Welcome back! Your flashcards missed you.</p> */}
         </>
         
     )

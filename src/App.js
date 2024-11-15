@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -36,7 +35,7 @@ function App() {
   }
 
 function deleteCard(id){
-  fetch(`https://phase-2-project-flashcards-app.onrender.com/words/${id}`,{
+  fetch(`http://localhost:5000/words/${id}`,{
     method: 'DELETE',
   })
   .then(()=>{

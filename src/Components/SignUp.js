@@ -1,4 +1,5 @@
 import React from "react";
+import { Navigate } from "react-router-dom";
 import "../styles/SignUp.css";
 
 function SignUp(){
@@ -31,7 +32,7 @@ if(password !== confirmPassword){
 if (email && password){
     const newUser = {email, password};
 
-fetch("https://phase-2-project-flashcards-app.onrender.com/profiles",{
+fetch("http://localhost:5000/profiles",{
     method:"POST",
     headers:{
         "Content-Type":"application/json"
@@ -54,7 +55,9 @@ fetch("https://phase-2-project-flashcards-app.onrender.com/profiles",{
 }
 }
 
-
+if (success){
+    return <Navigate to="/home" replace />;
+}
 
 
     return(
@@ -79,7 +82,7 @@ fetch("https://phase-2-project-flashcards-app.onrender.com/profiles",{
             <div className="form-group">
             <label>Password: </label>
             <input
-            type="text"
+            type="password"
             id="password"
             name="password"
             value={password}
@@ -92,7 +95,7 @@ fetch("https://phase-2-project-flashcards-app.onrender.com/profiles",{
             <div>
             <label>Password: </label>
             <input
-            type="text"
+            type="password"
             id="confirmPassword"
             name="confirmPassword"
             value={confirmPassword}

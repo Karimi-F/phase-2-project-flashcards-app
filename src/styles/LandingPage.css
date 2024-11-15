@@ -1,0 +1,61 @@
+/* Centering the entire container */
+.landing-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    text-align: center;
+  }
+  
+  /* Style for the main title */
+  .landing-page-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Button container to keep buttons side by side */
+  .button-container {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Button styles */
+  .button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button-signup {
+    background-color: orange;
+    color: black;
+  }
+  
+  .button-login {
+    background-color: orange;
+    color: black;
+  }
+  
+  /* Button hover effect */
+  .button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    background-color: black;
+    color: orange;
+  }
+  
+  /* Adding spacing to the forms */
+  /* .form-container {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 400px;
+  }
+   */

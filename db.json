@@ -1,7 +1,7 @@
 {
   "profiles": [
     {
-      "id": 1,
+      "id": "1",
       "email": "user@examples.com",
       "password": "hashed_password"
     },
@@ -9,6 +9,11 @@
       "id": "053c",
       "email": "fridah37karimi@gmail.com",
       "password": "123Chinese"
+    },
+    {
+      "id": "8c5a",
+      "email": "Jackson@gmail.com",
+      "password": "Goodpassword"
     }
   ],
   "words": [
@@ -144,6 +149,13 @@
       "hanzi": "告诉",
       "pinyin": "gàosù",
       "englishTranslation": "To tell"
+    },
+    {
+      "id": "fcd2",
+      "level": "1",
+      "hanzi": "他 ",
+      "pinyin": "Tā",
+      "englishTranslation": "He"
     }
   ]
 }

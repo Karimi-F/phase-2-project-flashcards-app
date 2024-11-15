@@ -35,7 +35,7 @@ return(
                     <h3>Hanzi: </h3>
                     <p>{hanzi}</p>
                     {/* <p>名字</p> */}
-                    <h2>Pinyin: </h2>
+                    <h3>Pinyin: </h3>
                     <p>{pinyin}</p>
                     {/* <p>ming zi</p> */}
                     <br/>
@@ -43,18 +43,17 @@ return(
             )
             }
             </div>
-            
-
+        
             <div className="btn-container" id="contain-btn"> 
                 <button  
-            className="btn"
+            className="display-btn"
             id="flip-btn"
             onClick={handleFlip}
             >
                 Flip</button>
 
                 <button
-                className="btn"
+                className="display-btn"
                 id="dlt-btn"
                 onClick={handleDelete}
                 >Delete</button>

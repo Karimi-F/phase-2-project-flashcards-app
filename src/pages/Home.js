@@ -49,22 +49,7 @@ function handleLoginClick(){
         </div>
         
 
-        {/* <SignUp /> */}
-
-        {/* <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-  <Login /> */}
-        {/* <About /> */}
-        {/* <CreateCards createCard={createCard}/> */}
-
-        <div className="btn-container">
+        {/* <div className="btn-container">
           <div className="sign-up-btn-container">
             <p>First time here? Get started</p>
             <br/>
@@ -88,7 +73,7 @@ function handleLoginClick(){
           </div>
           {showLogin && <Login />}
           
-        </div>
+        </div> */}
       </div>
     </>
   );
